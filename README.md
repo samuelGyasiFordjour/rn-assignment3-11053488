@@ -38,3 +38,14 @@ This is a React Native application designed to manage and track tasks across var
 8. **Image**
    - The Image component displays images.
    - Used for icons and decorative images within the app.
+
+
+### Custom Components
+
+1. **CategoryItem**
+   - A custom component for rendering individual categories.
+   - Displays category name and associated icon.
+
+2. **TaskItem**
+   - A custom component for rendering individual tasks.
+   - Displays task description, status, and action buttons.
