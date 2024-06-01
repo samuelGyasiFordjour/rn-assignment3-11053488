@@ -18,6 +18,26 @@ export default function App() {
     { id: '10', task: '11 tasks', name: 'Sleeping', image: require('./assets/6.png') },
   ];
 
+  const ongoingTasks = [
+    { id: '1', name: 'Complete the project report' },
+    { id: '2', name: 'Design the new app interface' },
+    { id: '3', name: 'Fix bugs in the login screen' },
+    { id: '4', name: 'Update the user documentation' },
+    { id: '5', name: 'Prepare for the team meeting' },
+    { id: '6', name: 'Review the pull requests' },
+    { id: '7', name: 'Test the new features' },
+    { id: '8', name: 'Refactor the codebase' },
+    { id: '9', name: 'Optimize the database queries' },
+    { id: '10', name: 'Implement user authentication' },
+    { id: '11', name: 'Set up CI/CD pipeline' },
+    { id: '12', name: 'Deploy the latest build' },
+    { id: '13', name: 'Create unit tests' },
+    { id: '14', name: 'Jogging' },
+    { id: '15', name: 'Reading a book' },
+    { id: '16', name: 'Learning a new language' },
+  ];
+
+
     return (
     <ScrollView style={styles.container}>
       <View style={styles.content}>
@@ -53,7 +73,18 @@ export default function App() {
             <Image source={category.image} style={styles.catImage} />
           </View>
         ))}
+
       </ScrollView>
+
+        <View style={styles.Ongoing}>
+        <Text style={styles.heading}>Ongoing Tasks</Text>
+      </View>
+
+      {ongoingTasks.map((task) => (
+        <View key={task.id} style={styles.list}>
+          <Text style={styles.taskName}>{task.name}</Text>
+        </View>
+      ))}
 
     </ScrollView>
   );
@@ -149,6 +180,23 @@ const styles = StyleSheet.create({
     height: 90,
     marginTop: 10,
     alignSelf: 'center',
+  },
+
+  list: {
+    backgroundColor: 'white',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    padding: 10,
+    marginTop: 14,
+    height: 100,
+    borderRadius: 15,
+    borderColor: '#E8D1BA',
+    borderWidth: 1,
+  },
+  taskName: {
+    marginBottom: 7,
+    fontSize: 17,
+    fontWeight: 'bold',
   },
 
   });

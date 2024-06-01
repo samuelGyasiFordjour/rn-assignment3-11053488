@@ -49,3 +49,15 @@ This is a React Native application designed to manage and track tasks across var
 2. **TaskItem**
    - A custom component for rendering individual tasks.
    - Displays task description, status, and action buttons.
+
+## Screenshots
+
+### Home Screen
+![Home Screen](./assets/Home.jpg)
+
+### Category List
+![Category List](./assets/Categories.jpg)
+
+### Task List
+![Task List](./assets/Ongoing_Task.jpg)
+
